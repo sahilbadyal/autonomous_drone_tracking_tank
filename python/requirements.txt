@@ -45,10 +45,10 @@ image-geometry==1.12.8
 interactive-markers==1.11.4
 Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.0
-kiwisolver==1.2.0
+kiwisolver
 laser-geometry==1.6.4
 Markdown==3.2.1
-matplotlib==3.2.1
+matplotlib
 message-filters==1.12.14
 numpy==1.18.2
 oauthlib==3.1.0

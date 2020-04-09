@@ -55,7 +55,7 @@ class objectdetector(object):
         dce, ds)
 
     display_image(image_with_boxes)
-    return image_with_boxes
+    return image_with_boxes.shape, db, db.shape
 
 
 
@@ -76,7 +76,9 @@ if __name__=='__main__':
   for image_url in image_urls:
     start_time = time.time()
     image_path = download_and_resize_image(image_url, 640, 480)
-    bounded_box_image = detector.run(image_path)
+    bounded_box_image,_1,_2 = detector.run(image_path)
     end_time = time.time()
     print("Inference time:",start_time-end_time)
     print(bounded_box_image)
+    print(_1)
+    print(_2)

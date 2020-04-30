@@ -40,7 +40,6 @@ class gazebo_interface():
         # uncomment this if you want to call stop from within move automagically
         self.stop()
 
-
     def save_image(self):
         p = Popen(["rosservice", "call", "/image_saver/save"], shell=False)
 
